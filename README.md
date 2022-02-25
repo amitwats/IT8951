@@ -58,11 +58,14 @@ To get it working first install `pillow` with `pip`. Do not install `RPi.GPIO` (
 ```
 sudo apt-get install python3-dev
 sudo apt-get install python3-tk
+sudo apt-get install python3-pip
+
 ```
 
 Finally, you need to compile the Cython code. From the IT8951 directory you can either do
 
 ```
+pip install setuptools
 python setup.py build_ext --inplace
 ```
 
